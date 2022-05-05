@@ -1,0 +1,119 @@
+*{
+    box-sizing: border-box;
+    font-family: '標楷體';
+    overflow: hidden;
+}
+
+/* body main*/
+.main {
+    display: flex;
+    width: 1024px;
+    padding: 0 12px;
+    margin: 10px auto;
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* 畫線 */ 
+body>*:not(aside,section),
+aside>*,
+section>* {
+    border: 1px solid lightgrey;
+}
+
+/* top */
+.top {
+    flex-basis: 1000px;
+    height: 65px;
+}
+
+/* aside */
+.aside {
+    flex-basis: 215px;
+    height: calc(768px - 65px - 20px);
+    display: flex;
+    flex-direction: column;
+}
+
+/* aside menu */
+.menu { 
+    flex-basis: calc(100% - 25px);
+}
+
+/* aside menu-header */
+.menu-header {
+    font-weight: 500;
+    font-size: 24px;
+    text-decoration: underline;
+    color: #FF00FF;
+    font-family: '標楷體';
+    margin: 20px auto;
+ 
+}
+
+/* aside menu a */
+.menu>a {
+    display: block;
+    width: 200px;
+    height: 35px;
+    color: #000000;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 10px auto;
+    padding-top: 10px;
+    background: url(./material/menu1.png) no-repeat;
+}
+
+/* aside menu>a:hover */
+.menu>a:hover {
+    background: url(./material/menu2.png) no-repeat;
+}
+
+
+/* aside update */
+.update {
+    flex-basis: 25px;
+    font-family: '標楷體';
+    color: #000000;
+    text-align: center;
+    font-size: 16px;
+}
+
+/* section */
+.section {
+    flex-basis: calc(1000px - 215px);
+    display: flex;
+    flex-direction: column;
+}
+
+/* marquee */ 
+.marquee {
+    flex-basis: 29px;
+    padding: 0 calc((100% - 770px - 2px)/2);
+    font-size: 24px;
+    color: #0000FF;
+    font-family: '標楷體';
+}
+
+/* content */
+.content {
+    flex-basis: calc(100% - 29px);
+}
+
+/* content iframe */
+.content>iframe {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* footer */
+.footer {
+    flex-basis: 1000px;
+    height: 20px;
+    font-size: 16px;
+    text-align: center;
+    font-family: '標楷體';
+    color: #000000;
+}
